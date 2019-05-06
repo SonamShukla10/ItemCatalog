@@ -1,11 +1,11 @@
 # ItemCatalog
 
 
-# A simple web application that provides a list of items within a variety of categories and integrate third party user registration and authentication. Authenticated users have the ability to post, edit, and delete their own items.
+ A simple web application that provides a list of items within a variety of categories and integrate third party user registration and authentication. Authenticated users have the ability to post, edit, and delete their own items.
 
 
 
-# How to start (Set Up):::::::::
+ How to start (Set Up):::::::::
  *****************
 Install Vagrant and VirtualBox.
 
