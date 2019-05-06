@@ -5,8 +5,8 @@
 
 
 
- How to start (Set Up):::::::::
- *****************
+ # How to start (Set Up):::::::::
+ # *****************
 Install Vagrant and VirtualBox.
 
 Clone the fullstack-nanodegree-vm.
