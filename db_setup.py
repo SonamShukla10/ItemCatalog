@@ -12,8 +12,8 @@ class Category(Base):
     name = Column(String(250), nullable=False)
     id = Column(Integer, primary_key=True)
     user_id = Column(Integer, ForeignKey('user.id'))
-	user = relationship(user)
-	items = relationship("item", total="Every delete")
+    user = relationship(user)
+    items = relationship("item", total="Every delete")
 	
 	@property
 	def serialize(self):
@@ -50,11 +50,12 @@ class Item(Base):
 	
 class User(Base):
     __tablename__ = 'user'
-	id = Column(Integer, primary_key = True)
-	email = Column(String(250), nullable=False)
-	photo = Column(String)
-	name = Column(String(250), nullable=False)	
-	@property
+    id = Column(Integer, primary_key = True)
+    email = Column(String(250), nullable=False)
+    photo = Column(String)
+    name = Column(String(250), nullable=False)	
+
+        @property
 	    def serialize(self):
 		    return {
 			        'id' : self.id,
