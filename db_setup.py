@@ -66,5 +66,5 @@ class User(Base):
 					
 
 
-create_engine('postgresql://catalog:password@localhost/catalog')
+create_engine('postgresql://catalog:sonam@localhost/catalog')
 Base.metadata.create_all(engine)					
