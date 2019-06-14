@@ -22,7 +22,7 @@ import httplib2
 clientId = json.loads(open('clientsWork.json', 'r').read())['web']['client_id']
 
 # CONNECTION
-create_engine('postgresql://catalog:sonam@localhost/catalog')
+engine = create_engine('sqlite:///db_catalog.db')
 Base.metadata.bind = engine
 DBSession = sessionmaker(bind=engine)
 session = DBSession()
