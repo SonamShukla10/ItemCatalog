@@ -2,7 +2,7 @@ from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 
 from db_setup import Category, Base, Item, User
-create_engine('postgresql://sonam:password@localhost/catalog')
+engine = create_engine('sqlite:///db_catalog.db')
 
 #BINDIND DB
 Base.metadata.bind=engine
